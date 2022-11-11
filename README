@@ -6,6 +6,8 @@ In this React application, you can add cards, remove cards, and filter cards by 
 
 # Skills #
 
+  * RTL - React Testing Library
+
   * Read the state of a component and use it to change what we display in the browser
 
   * Initialize a component, giving it a predefined state
