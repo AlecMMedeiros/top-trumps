@@ -21,7 +21,7 @@ describe("5 - Faça a validação do botão de Salvar no formulário", () => {
     userEvent.type(screen.getByTestId(/attr1-input/i), '12');
     userEvent.type(screen.getByTestId(/attr2-input/i), '34');
     userEvent.type(screen.getByTestId(/attr3-input/i), '56');
-    userEvent.selectOptions(screen.getByTestId(/rare-input/i), 'raro');
+    userEvent.selectOptions(screen.getByTestId(/rare-input/i), 'Rare');
     expect(saveBtn).not.toBeDisabled();
 
     userEvent.type(screen.getByTestId(/name-input/i), '{selectall}{backspace}');
@@ -38,7 +38,7 @@ describe("5 - Faça a validação do botão de Salvar no formulário", () => {
     userEvent.type(screen.getByTestId(/attr1-input/i), '12');
     userEvent.type(screen.getByTestId(/attr2-input/i), '34');
     userEvent.type(screen.getByTestId(/attr3-input/i), '56');
-    userEvent.selectOptions(screen.getByTestId(/rare-input/i), 'raro');
+    userEvent.selectOptions(screen.getByTestId(/rare-input/i), 'Rare');
     expect(saveBtn).not.toBeDisabled();
 
     userEvent.type(screen.getByTestId(/image-input/i), '{selectall}{backspace}');
@@ -55,7 +55,7 @@ describe("5 - Faça a validação do botão de Salvar no formulário", () => {
     userEvent.type(screen.getByTestId(/attr1-input/i), '12');
     userEvent.type(screen.getByTestId(/attr2-input/i), '34');
     userEvent.type(screen.getByTestId(/attr3-input/i), '56');
-    userEvent.selectOptions(screen.getByTestId(/rare-input/i), 'raro');
+    userEvent.selectOptions(screen.getByTestId(/rare-input/i), 'Rare');
     expect(saveBtn).not.toBeDisabled();
 
     userEvent.type(screen.getByTestId(/description-input/i), '{selectall}{backspace}');
@@ -80,7 +80,7 @@ describe("5 - Faça a validação do botão de Salvar no formulário", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '30');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     expect(saveBtn).not.toBeDisabled();
 
     userEvent.clear(attr1Input);
@@ -105,7 +105,7 @@ describe("5 - Faça a validação do botão de Salvar no formulário", () => {
     userEvent.type(attr1Input, '0');
     userEvent.type(attr2Input, '30');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     expect(saveBtn).not.toBeDisabled();
 
     userEvent.clear(attr1Input);
@@ -130,7 +130,7 @@ describe("5 - Faça a validação do botão de Salvar no formulário", () => {
     userEvent.type(attr1Input, '30');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     expect(saveBtn).not.toBeDisabled();
 
     userEvent.clear(attr2Input);
@@ -155,7 +155,7 @@ describe("5 - Faça a validação do botão de Salvar no formulário", () => {
     userEvent.type(attr1Input, '30');
     userEvent.type(attr2Input, '0');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     expect(saveBtn).not.toBeDisabled();
 
     userEvent.clear(attr2Input);
@@ -180,7 +180,7 @@ describe("5 - Faça a validação do botão de Salvar no formulário", () => {
     userEvent.type(attr1Input, '30');
     userEvent.type(attr2Input, '30');
     userEvent.type(attr3Input, '90');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     expect(saveBtn).not.toBeDisabled();
 
     userEvent.clear(attr3Input);
@@ -205,7 +205,7 @@ describe("5 - Faça a validação do botão de Salvar no formulário", () => {
     userEvent.type(attr1Input, '30');
     userEvent.type(attr2Input, '30');
     userEvent.type(attr3Input, '0');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     expect(saveBtn).not.toBeDisabled();
 
     userEvent.clear(attr3Input);
@@ -230,7 +230,7 @@ describe("5 - Faça a validação do botão de Salvar no formulário", () => {
     userEvent.type(attr1Input, '70');
     userEvent.type(attr2Input, '70');
     userEvent.type(attr3Input, '70');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     expect(saveBtn).not.toBeDisabled();
 
     userEvent.clear(attr1Input);
@@ -258,7 +258,7 @@ describe("5 - Faça a validação do botão de Salvar no formulário", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     expect(saveBtn).not.toBeDisabled();
   });
 })

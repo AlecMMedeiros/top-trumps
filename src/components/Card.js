@@ -27,7 +27,7 @@ class Card extends React.Component {
             name="image-card"
             data-testid="image-card"
             src={ cardImage }
-            alt={ !cardName ? cardName : '' }
+            alt={ cardName || '' }
           />
           <div className="rare">
             <span data-testid="rare-card">

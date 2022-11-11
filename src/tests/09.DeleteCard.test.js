@@ -22,12 +22,12 @@ describe("9 - Crie um botão para remover uma carta do baralho", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
     const deleteBtns = screen.getAllByTestId('delete-button');
-    expect(deleteBtns).toHaveLength(1);
+    expect(deleteBtns).toHaveLength(11);
   });
 
   it("Será validado se ao adicionar uma carta e excluí-la em seguida, a carta não é renderizada", () => {
@@ -48,14 +48,14 @@ describe("9 - Crie um botão para remover uma carta do baralho", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
     expect(screen.getByText("Carta 1 - Bebedouro de Guarulhos")).toBeInTheDocument();
 
-    const deleteBtn = screen.getByTestId("delete-button");
-    userEvent.click(deleteBtn);
+    const deleteBtn = screen.getAllByTestId("delete-button");
+    userEvent.click(deleteBtn[10]);
 
 
     expect(screen.queryByText("Carta 1 - Bebedouro de Guarulhos")).not.toBeInTheDocument();
@@ -81,7 +81,7 @@ describe("9 - Crie um botão para remover uma carta do baralho", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -92,12 +92,12 @@ describe("9 - Crie um botão para remover uma carta do baralho", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "normal");
+    userEvent.selectOptions(selectInput, "Normal");
     userEvent.click(saveBtn);
 
     const deleteBtn = screen.getAllByTestId("delete-button");
     expect(screen.getByText("Carta 1 - Pombo da Cidade")).toBeInTheDocument();
-    userEvent.click(deleteBtn[0]);
+    userEvent.click(deleteBtn[10]);
 
     expect(screen.queryByText("Carta 1 - Pombo da Cidade")).not.toBeInTheDocument();
     expect(screen.getByText("Carta 2 - Pomba Branca")).toBeInTheDocument();
@@ -122,14 +122,14 @@ describe("9 - Crie um botão para remover uma carta do baralho", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
     expect(checkboxTrunfo).not.toBeInTheDocument();
 
-    const deleteBtn = screen.getByTestId("delete-button");
-    userEvent.click(deleteBtn);
+    const deleteBtn = screen.getAllByTestId("delete-button");
+    userEvent.click(deleteBtn[10]);
 
     checkboxTrunfo = screen.getByTestId(/trunfo-input/i);
     expect(checkboxTrunfo).toBeInTheDocument();

@@ -21,7 +21,7 @@ describe("6 - Crie a função do botão salvar", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "normal");
+    userEvent.selectOptions(selectInput, "Normal");
     
     expect(saveBtn).toBeEnabled();
     userEvent.click(saveBtn);
@@ -48,7 +48,7 @@ describe("6 - Crie a função do botão salvar", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "normal");
+    userEvent.selectOptions(selectInput, "Normal");
     
     expect(saveBtn).toBeEnabled();
     userEvent.click(saveBtn);
@@ -58,7 +58,7 @@ describe("6 - Crie a função do botão salvar", () => {
     expect(attr3Input).toHaveValue(0);
   });
 
-  it("Será validado se o campo de `Raridade` tem o valor `normal` após clicar em `salvar`", () => {
+  it("Será validado se o campo de `Raridade` tem o valor `Normal` após clicar em `salvar`", () => {
     render(<App />);
     const nameInput = screen.getByTestId(/name-input/i);
     const descInput = screen.getByTestId(/description-input/i);
@@ -75,12 +75,12 @@ describe("6 - Crie a função do botão salvar", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     
     expect(saveBtn).toBeEnabled();
     userEvent.click(saveBtn);
 
-    expect(selectInput).toHaveValue('normal');
+    expect(selectInput).toHaveValue('');
   });
 
 })

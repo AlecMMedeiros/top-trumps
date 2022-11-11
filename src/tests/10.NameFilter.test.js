@@ -29,7 +29,7 @@ describe("10 - Crie o filtro pelo nome da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -43,7 +43,7 @@ describe("10 - Crie o filtro pelo nome da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -55,7 +55,7 @@ describe("10 - Crie o filtro pelo nome da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -85,7 +85,7 @@ describe("10 - Crie o filtro pelo nome da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 

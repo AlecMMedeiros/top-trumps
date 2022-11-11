@@ -10,7 +10,7 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     expect(filterNameInput).toBeInTheDocument();
   });
 
-  it("Será validado se somente as cartas com raridade `normal` são exibidas após o filtro", () => {
+  it("Será validado se somente as cartas com raridade `Normal` são exibidas após o filtro", () => {
     render(<App />);
 
     const checkboxTrunfo = screen.getByTestId(/trunfo-input/i);
@@ -30,7 +30,7 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "muito raro");
+    userEvent.selectOptions(selectInput, "Very Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -41,7 +41,7 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -52,19 +52,19 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "normal");
+    userEvent.selectOptions(selectInput, "Normal");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
     const filterRareInput = screen.getByTestId(/rare-filter/i);
-    userEvent.selectOptions(filterRareInput, "normal");
+    userEvent.selectOptions(filterRareInput, "Normal");
     expect(screen.getByText("Carta 3 - Van de transporte")).toBeInTheDocument();
 
     expect(screen.queryByText("Carta 1 - Uno de Escada")).not.toBeInTheDocument();
     expect(screen.queryByText("Carta 2 - Carro do ovo")).not.toBeInTheDocument();
   });
 
-  it("Será validado se somente as cartas com raridade `raro` são exibidas após o filtro", () => {
+  it("Será validado se somente as cartas com raridade `Rare` são exibidas após o filtro", () => {
     render(<App />);
 
     const checkboxTrunfo = screen.getByTestId(/trunfo-input/i);
@@ -84,7 +84,7 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "muito raro");
+    userEvent.selectOptions(selectInput, "Very Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -95,7 +95,7 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(saveBtn);
 
     // Terceira carta
@@ -105,18 +105,18 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "normal");
+    userEvent.selectOptions(selectInput, "Normal");
     userEvent.click(saveBtn);
 
     const filterRareInput = screen.getByTestId(/rare-filter/i);
-    userEvent.selectOptions(filterRareInput, "raro");
+    userEvent.selectOptions(filterRareInput, "Rare");
     expect(screen.getByText("Carta 2 - Carro do ovo")).toBeInTheDocument();
 
     expect(screen.queryByText("Carta 1 - Uno de Escada")).not.toBeInTheDocument();
     expect(screen.queryByText("Carta 3 - Van de transporte")).not.toBeInTheDocument();
   });
 
-  it("Será validado se somente as cartas com raridade `muito raro` são exibidas após o filtro", () => {
+  it("Será validado se somente as cartas com raridade `muito Rare` são exibidas após o filtro", () => {
     render(<App />);
 
     const checkboxTrunfo = screen.getByTestId(/trunfo-input/i);
@@ -136,7 +136,7 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "muito raro");
+    userEvent.selectOptions(selectInput, "Very Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -147,7 +147,7 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -158,12 +158,12 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "normal");
+    userEvent.selectOptions(selectInput, "Normal");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
     const filterRareInput = screen.getByTestId(/rare-filter/i);
-    userEvent.selectOptions(filterRareInput, "muito raro");
+    userEvent.selectOptions(filterRareInput, "Very Rare");
     expect(screen.getByText("Carta 1 - Uno de Escada")).toBeInTheDocument();
 
     expect(screen.queryByText("Carta 2 - Carro do ovo")).not.toBeInTheDocument();
@@ -190,7 +190,7 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -201,7 +201,7 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -212,12 +212,12 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "normal");
+    userEvent.selectOptions(selectInput, "Normal");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
     const filterRareInput = screen.getByTestId(/rare-filter/i);
-    userEvent.selectOptions(filterRareInput, "todas");
+    userEvent.selectOptions(filterRareInput, "All");
     
 
     expect(screen.getByText("Carta 1 - Uno de Escada")).toBeInTheDocument();
@@ -245,7 +245,7 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -256,7 +256,7 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -267,12 +267,12 @@ describe("11 - Crie o filtro por raridade da carta", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "normal");
+    userEvent.selectOptions(selectInput, "Normal");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
     const filterRareInput = screen.getByTestId(/rare-filter/i);
-    userEvent.selectOptions(filterRareInput, "muito raro");
+    userEvent.selectOptions(filterRareInput, "Very Rare");
     
 
     expect(screen.queryByText("Carta 1 - Uno de Escada")).not.toBeInTheDocument();

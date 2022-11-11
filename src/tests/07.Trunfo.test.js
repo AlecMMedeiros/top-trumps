@@ -28,7 +28,7 @@ describe("7 - Crie a validação do Super Trunfo", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 

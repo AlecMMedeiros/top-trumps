@@ -40,13 +40,14 @@ describe("1 - Crie o formulário que será usado para adicionar cartas ao baralh
     expect(imgInput).toBeInTheDocument();
   });
 
-  it("Será validado se existe um input select que possui o `data-testid='rare-input'` com as options `normal`, `raro` e `muito raro`", () => {
+  it("Será validado se existe um input select que possui o `data-testid='rare-input'` com as options `normal`, `rare` e `very rare`", () => {
     render(<App />);
     const rareInput = screen.getByTestId(/rare-input/i);
     expect(rareInput).toBeInTheDocument();
-    expect(rareInput.options[0].value).toBe("normal");
-    expect(rareInput.options[1].value).toBe("raro");
-    expect(rareInput.options[2].value).toBe("muito raro");
+    expect(rareInput.options[0].value).toBe("");
+    expect(rareInput.options[1].value).toBe("Normal");
+    expect(rareInput.options[2].value).toBe("Rare");
+    expect(rareInput.options[3].value).toBe("Very Rare");
   });
   
   it("Será validado se existe um input checkbox que possui o `data-testid='trunfo-input'`", () => {

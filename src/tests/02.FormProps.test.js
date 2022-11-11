@@ -10,7 +10,7 @@ const defaultProps = {
   cardAttr2: "34",
   cardAttr3: "56",
   cardImage: "url-to-image",
-  cardRare: "raro",
+  cardRare: "Rare",
   cardTrunfo: true,
   hasTrunfo: false,
   isSaveButtonDisabled: false,
@@ -90,9 +90,9 @@ describe("2 - Adicione as props necessárias ao componente de formulário", () =
     render(<Form {...defaultProps} onInputChange={onInputChange} />);
     const input = screen.getByTestId(/rare-input/i);
 
-    expect(input).toHaveValue("raro");
+    expect(input).toHaveValue("Rare");
 
-    userEvent.selectOptions(input, "muito raro");
+    userEvent.selectOptions(input, "Very Rare");
     expect(onInputChange).toHaveBeenCalled();
   });
 

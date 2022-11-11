@@ -22,7 +22,7 @@ describe("8 - Exiba a lista de cartas que estão salvas no estado", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "normal");
+    userEvent.selectOptions(selectInput, "Normal");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -53,7 +53,7 @@ describe("8 - Exiba a lista de cartas que estão salvas no estado", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(checkboxTrunfo);
     userEvent.click(saveBtn);
 
@@ -68,7 +68,7 @@ describe("8 - Exiba a lista de cartas que estão salvas no estado", () => {
     userEvent.type(attr1Input, '90');
     userEvent.type(attr2Input, '90');
     userEvent.type(attr3Input, '30');
-    userEvent.selectOptions(selectInput, "raro");
+    userEvent.selectOptions(selectInput, "Rare");
     userEvent.click(saveBtn);
 
 
