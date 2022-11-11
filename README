@@ -1,35 +1,20 @@
+# Overview #
 
-  <details>
-  <summary><strong>Overview</strong></summary><br />
+This is a small Reactjs project developed during my time as a web development student.
 
-  Neste projeto, verificamos se você é capaz de:
+In this React application, you can add cards, remove cards, and filter cards by rarity.
 
-  * Ler o estado de um componente e usá-lo para alterar o que exibimos no browser
+# Skills #
 
-  * Inicializar um componente, dando a ele um estado pré-definido
+  * Read the state of a component and use it to change what we display in the browser
 
-  * Atualizar o estado de um componente
+  * Initialize a component, giving it a predefined state
 
-  * Capturar eventos utilizando a sintaxe do React
+  * Refresh the state of a component
 
-  * Criar formulários utilizando sintaxe JSX com as tags: `input`, `textarea`, `select`, `form`, `checkbox`
+  * Capture events using React syntax
 
-  * Transmitir informações de componentes filhos para componentes pais via callbacks
-</details>
-<details>
-  <summary><strong>:memo: Habilidades</strong></summary><br />
+  * Create forms using JSX syntax with the tags: `input`, `textarea`, `select`, `form`, `checkbox`
 
-  Neste projeto, verificamos se você é capaz de:
+  * Pass information from child components to parent components via callbacks  
 
-  * Ler o estado de um componente e usá-lo para alterar o que exibimos no browser
-
-  * Inicializar um componente, dando a ele um estado pré-definido
-
-  * Atualizar o estado de um componente
-
-  * Capturar eventos utilizando a sintaxe do React
-
-  * Criar formulários utilizando sintaxe JSX com as tags: `input`, `textarea`, `select`, `form`, `checkbox`
-
-  * Transmitir informações de componentes filhos para componentes pais via callbacks
-</details>
