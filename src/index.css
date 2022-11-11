@@ -1,10 +1,424 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Staatliches', cursive;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
+  background-color: black;
+  font-size: 12px;
+}
+
+header {
+  background-color: #e6b737;
+}
+
+h1 {
+ text-align: center;
+ color: rgba(0, 0, 0, 0.521);
+ padding: 10px;
+}
+
+form {
+    background-color: aquamarine;
+    padding: 5vh 2vh;
+    border-radius: 8px;
+}
+
+input, select{
+  gap: 2%;
+  margin-left: 10px;
+  color: black;
+  border-radius: 5px;
+}
+
+form, label{
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: black;
+}
+
+.supertrunfo {
+  align-content: space-around;
+  padding: 0 5px;
+  text-align: right;
+  background-color: #e6b737;
+  box-shadow: 10px 5px 5px black;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.container {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  justify-content: center;
+  background-color:rgb(13, 14, 14);
+  flex: auto;
+  max-width: 100vw;
+  height: 500x;
+}
+
+.master-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:crimson;
+  width: 300px;
+  height: 550px;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 8px;
+  padding: 0;
+}
+
+.name-input {
+  width: 300px;  
+}
+
+.master-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:crimson;
+  width: 300px;
+  height: 550px;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 8px;
+}
+
+.normal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:crimson;
+  width: 300px;
+  height: 550px;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 8px;
+}
+
+.raro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c5691;
+  width: 300px;
+  height: 550px;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 8px;
+}
+
+.mraro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6b737;
+  width: 300px;
+  height: 550px;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 8px;
+}
+
+.cardTitle {
+  display: flex;
+  position: relative;
+  font-size: 20px;
+  font-family: 'MedievalSharp', cursive;
+  color: rgb(206, 219, 16);
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 70px;
+  width: 300px;
+  border-radius: 8px 0 8px;
+  opacity: 50%;
+  box-shadow: 10px 5px 5px black;
+  border: 5px solid rgba(0, 0, 0, 0.521);
+}
+
+.cardImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(220, 20, 60, 0);
+  height: 200px;
+  width: 280px;
+  border: 5px solid rgba(0, 0, 0, 0.521);
+}
+
+.rare {
+  display: flex;
+  color: whitesmoke;
+  justify-content: space-between;
+  font-style: oblique;
+  position: relative;
+  width: 300px;
+  background-color: rgb(26, 24, 24);
+  box-shadow: 10px 5px 5px black;
+  border: 5px solid rgba(0, 0, 0, 0.521);
+}
+
+.trunfoCard {
+  color: rgb(202, 174, 17);
+}
+
+.container-cardDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 300px;
+  margin-bottom: 10px;
+  border: 5px solid rgba(0, 0, 0, 0.521);
+  box-shadow: inset 0 0 1em rgb(2, 2, 2);
+  border-radius: 5px;
+}
+
+.cardDescription {
+  display: flex;
+  background-color: rgb(26, 24, 24);
+  padding: 0 10px;
+  align-items: center;
+  text-align: center;
+  color: whitesmoke;
+  word-break: keep-all;
+  height: 100px;
+  width: 280px;
+  border-radius: 5px;
+}
+
+.Attributes {
+  display: flex;
+  font-style: oblique;
+  color: rgb(202, 174, 17);
+  background-color:rgb(26, 24, 24);
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 280px;
+  box-shadow: 10px 5px 5px black;
+  margin-bottom: 5px;
+}
+
+.Attributes span {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  margin-left: 10px;
+}
+
+img {
+  display: flex;
+  max-height: 180px;
+  width: 300px;
+  color: none;  
+}
+
+.filters {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color:#e6b737;
+  height: 50px;
+}
+
+.filters div {
+  display: flex;
+  background-color:#e6b737;
+  height: 30px;
+}
+
+.tdecked {
+  align-items: center;
+}
+
+.container-deck {
+  display: flex;
+  justify-content: center;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(13, 14, 14);
+  gap: 1%;
+  justify-content: center;
+  padding: 10px;
+  width: 1200px;
+}
+
+.card-deck > .normal:hover {
+  transform: scale(1.05);
+}
+
+.card-deck > .normal {
+  width: 200px;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.card-deck > .normal  img {
+  width: 200px;
+  height: 112px;
+}
+
+.card-deck > .normal > .cardTitle {
+  font-size: 16px;
+  width: 200px;
+  height: 80px;
+}
+
+.card-deck > .normal> .cardImage {
+  width: 200px;
+}
+
+.card-deck > .normal > .cardImage > .rare {
+  width: 200px;
+}
+
+.card-deck > .normal > .cardImage > .rare {
+  width: 200px;
+}
+
+.card-deck > .normal > .container-cardDescription {
+  width: 200px;
+  margin-bottom: 5px;
+  height: 110px;
+}
+
+.card-deck > .normal > .container-cardDescription > .cardDescription {
+  width: 186px;
+  height: 100px;
+}
+
+.card-deck > .normal > .Attributes{
+  width: 186px; 
+}
+
+.card-deck > .normal > .Attributes span {
+  display: flex; 
+  align-items: center;
+  width: 30px;
+  margin-left: 10px;
+}
+
+.card-deck > .raro:hover {
+  transform: scale(1.05);
+}
+
+.card-deck > .raro {
+  width: 200px;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.card-deck > .raro  img {
+  width: 200px;
+  height: 112px;
+}
+
+.card-deck > .raro > .cardTitle {
+  font-size: 16px;
+  width: 200px;
+  height: 80px;
+}
+
+.card-deck > .raro > .cardImage {
+  width: 200px;
+}
+
+.card-deck > .raro > .cardImage > .rare {
+  width: 200px;
+}
+
+.card-deck > .raro > .cardImage > .rare {
+  width: 200px;
+}
+
+.card-deck > .raro > .container-cardDescription {
+  width: 200px;
+  margin-bottom: 5px;
+  height: 110px;
+}
+
+.card-deck > .raro > .container-cardDescription > .cardDescription {
+  width: 186px;
+  height: 100px;
+}
+
+.card-deck > .raro > .Attributes{
+  width: 186px;
+}
+
+.card-deck > .raro > .Attributes span {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  margin-left: 10px;
+}
+
+.card-deck > .mraro:hover {
+  transform: scale(1.05); 
+}
+
+.card-deck > .mraro {
+  width: 200px;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.card-deck > .mraro  img {
+  width: 200px;
+  height: 112px;
+}
+
+.card-deck > .mraro > .cardTitle {
+  font-size: 16px;
+  width: 200px;
+  height: 80px;
+}
+
+.card-deck > .mraro > .cardImage {
+  width: 200px;
+}
+
+.card-deck > .mraro > .cardImage > .rare {
+  width: 200px;
+}
+
+.card-deck > .mraro > .cardImage > .rare {
+  width: 200px;
+}
+
+.card-deck > .mraro > .container-cardDescription {
+  width: 200px;
+  margin-bottom: 5px;
+  height: 110px;
+}
+
+.card-deck > .mraro > .container-cardDescription > .cardDescription {
+  width: 186px;
+  height: 100px;
+}
+
+.card-deck > .mraro > .Attributes{
+  width: 186px;
+}
+
+.card-deck > .mraro > .Attributes span {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  margin-left: 10px;
+}
+
+.removebutton {
+  margin-top: 4px;
+}
+
+.btn-sm {
+  font-size: x-small;
 }
 
 code {
