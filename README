@@ -4,6 +4,8 @@ This is a small Reactjs project developed during my time as a web development st
 
 In this React application, you can add cards, remove cards, and filter cards by rarity.
 
+You can check the app online at: https://top-trumps-production.up.railway.app/
+
 # Skills #
 
   * RTL - React Testing Library
@@ -18,7 +20,7 @@ In this React application, you can add cards, remove cards, and filter cards by 
 
   * Create forms using JSX syntax with the tags: `input`, `textarea`, `select`, `form`, `checkbox`
 
-  * Pass information from child components to parent components via callbacks  
+  * Pass information from child components to parent components via callbacks
 
 # Special thanks #
 
